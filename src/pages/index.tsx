@@ -1,11 +1,22 @@
 import ExperienceBar from '../components/ExperienceBar'
-import { Container } from '../styles/home'
+import Profile from '../components/Profile'
+import { Container } from '@styles/Home'
 
 const Home: React.FC = () => {
   return (
     <Container>
       <ExperienceBar />
-      <h1>Hello world</h1>
+
+      <section>
+
+        <div>
+          <Profile />
+        </div>
+        <div>
+
+        </div>
+
+      </section>
     </Container>
   )
 }
