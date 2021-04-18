@@ -1,8 +1,10 @@
-export function ExperienceBar() {
+import { Container } from '../styles/components/experienceBar'
+
+const ExperienceBar: React.FC = () => {
   return(
-    <header className="experience-bar">
+    <Container>
       <span>0 xp</span>
-      <div>
+      <div className="content">
         <div style={{ width: '50%' }} />
 
         <span className="current-experience" style={{ left: '50%' }}>
@@ -10,6 +12,8 @@ export function ExperienceBar() {
         </span>
       </div>
       <span>600 xp</span>
-    </header>
+    </Container>
   )
 }
+
+export default ExperienceBar

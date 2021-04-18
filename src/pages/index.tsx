@@ -1,10 +1,13 @@
-import { ExperienceBar } from "../components/ExperienceBar";
+import ExperienceBar from '../components/ExperienceBar'
+import { Container } from '../styles/home'
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
-    <div className="container">
+    <Container>
       <ExperienceBar />
       <h1>Hello world</h1>
-    </div>
+    </Container>
   )
 }
+
+export default Home
