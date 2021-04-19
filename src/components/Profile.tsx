@@ -1,13 +1,18 @@
+import { Container } from '@styles/components/profile'
+
 const Profile: React.FC = () => {
   return (
-    <div>
+    <Container>
       <img src="https://github.com/lucasfelixc.png" alt="Lucas Felix"/>
 
-      <div>
+      <div className="contentInfo">
         <strong>Lucas Felix</strong>
-        <p>Level 1</p>
+        <p>
+          <img src="icons/arrow.svg" alt="Level"/>
+          Level 1
+        </p>
       </div>
-    </div>
+    </Container>
   )
 }
 

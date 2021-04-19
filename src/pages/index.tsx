@@ -1,13 +1,13 @@
 import ExperienceBar from '../components/ExperienceBar'
 import Profile from '../components/Profile'
-import { Container } from '@styles/Home'
+import { Container, ContentSection } from '@styles/Home'
 
 const Home: React.FC = () => {
   return (
     <Container>
       <ExperienceBar />
 
-      <section>
+      <ContentSection>
 
         <div>
           <Profile />
@@ -16,7 +16,7 @@ const Home: React.FC = () => {
 
         </div>
 
-      </section>
+      </ContentSection>
     </Container>
   )
 }
