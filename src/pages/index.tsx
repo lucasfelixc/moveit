@@ -1,6 +1,6 @@
 import ExperienceBar from '../components/ExperienceBar'
 import Profile from '../components/Profile'
-import { Container, ContentSection } from '@styles/Home'
+import { Container, ContentSection } from '@styles/pages/Home'
 import CompletedChallengers from 'components/CompletedChallengers'
 import Countdown from 'components/Countdown'
 

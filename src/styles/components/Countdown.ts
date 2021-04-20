@@ -59,7 +59,45 @@ export const ButtonCountdown = styled.button`
 
   transition: background-color 0.2s;
 
-  :hover {
+  :not(:disabled):hover {
     background: ${props => props.theme.colors.blueDark};
+  }
+
+  :disabled {
+    background: ${props => props.theme.colors.white};
+    color: ${props => props.theme.colors.text};
+    cursor: not-allowed;
+
+    border-bottom: 4px solid ${props => props.theme.colors.green};
+  }
+
+  > img {
+    margin-left: 1rem;
+  }
+`
+
+export const ButtonCountdownActive = styled.button`
+  width: 100%;
+  height: 5rem;
+
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+  border-radius: 5px;
+
+  background: ${props => props.theme.colors.white};
+  color: ${props => props.theme.colors.title};
+
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  transition: background-color 0.2s;
+
+  :not(:disabled):hover {
+    background: #ED1A1A;
+    color: ${props => props.theme.colors.white};
   }
 `
