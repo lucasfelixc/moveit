@@ -97,7 +97,7 @@ export const ButtonCountdownActive = styled.button`
   transition: background-color 0.2s;
 
   :not(:disabled):hover {
-    background: #ED1A1A;
+    background: ${props => props.theme.colors.red};
     color: ${props => props.theme.colors.white};
   }
 `
