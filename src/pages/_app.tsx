@@ -3,14 +3,16 @@ import { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components'
 import theme from '../styles/Theme'
 
-// import { ChallengesContext } from '../contexts/ChallengesContext'
+import { ChallengesProvider } from '../contexts/ChallengesContext'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
-    <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
-      <GlobalStyle />
-    </ThemeProvider>
+    <ChallengesProvider>
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+        <GlobalStyle />
+      </ThemeProvider>
+    </ChallengesProvider>
   )
 }
 
