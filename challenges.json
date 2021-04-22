@@ -38,5 +38,15 @@
     "type": "body",
     "description": "Sentado, cruze uma perna e incline seu tronco à frente, troque de perna após 10 segundos.",
     "amount": 60
+  },
+  {
+    "type": "eye",
+    "description": "Sente-se em uma cadeira e observe um objeto a alguns metros de distância. Depois, estique o braço com o polegar para cima, observando-o por 15 segundos. Logo em seguida olhe para o objeto a frente pelo mesmo tempo. Reveze a visão por cinco vezes, fazendo com que os olhos foquem tanto de perto quanto de longe",
+    "amount": 70
+  },
+  {
+    "type": "eye",
+    "description": "Sem forçar, olhe para todas as direções por dez segundos, repetindo o exercício por mais três vezes para relaxar a tensão da região. Esse exercício é indicado principalmente quando se está focado muito tempo em um único ponto, como a tela do celular ou do computador",
+    "amount": 80
   }
 ]
